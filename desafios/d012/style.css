@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+:root {
+    --fonte-padrao: "Sriracha", cursive;
+    --fonte-titulo: "Passion One", sans-serif;
+}
+
+.link {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: black;
+    height: 20vw;
+}
+
+header > h1 {
+    font-family: var(--fonte-titulo);
+    font-variant: small-caps;
+    color: white;
+    padding-top: 2vh;
+    text-align: center;
+    font-size: 10vw;
+}
+
+header > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+header > h1:hover {
+    text-decoration: underline;
+}
+
+body {
+    min-height: 100vh;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer > p {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    font-family: var(--fonte-padrao);
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font-size: 3.5vw;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+}
+
+section.imagem {
+    color: white;
+    box-shadow: inset 0px 0px 17px 3px rgba(0, 0, 0, 0.514);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.imagem > p {
+    display: inline-block;
+    background-color: rgba(26, 26, 26, 0.52);
+    padding: 5px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: center center;
+}
